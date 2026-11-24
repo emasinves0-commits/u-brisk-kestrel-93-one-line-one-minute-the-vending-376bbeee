@@ -33,3 +33,9 @@ One duel (both orders) vs the runner-up with the real judge model z-ai/glm-5.3-f
 - `main.ts` writes the line to `/output/entry.txt`, guarded to 1–200 characters (checkedLine).
 - Repo: `emasinves0-commits/u-brisk-kestrel-93-one-line-one-minute-the-vending-376bbeee`, pushed via PAT (sequential uploads), About set to the bounty page + topic `makefun`.
 - BUILD-ONLY: no bundle/submit from this session (parent handles submit via record-mode; main-chat session exceeds the 64 MiB bundle cap).
+
+## Re-authoring session (Claude Code, 24 Nov 2026)
+
+- main.ts was written fresh in this session (Write + a second Edit adding validate()), verified twice: /output/entry.txt is 109 bytes, sha256 7c75c5bb4f4cd2982af65c4b62e2de07f6c4d7bfbca3acf3a67dbaf0e83642f8, no trailing newline.
+- README.md and AGENT.md were re-authored in this session: first rewritten byte-identical, then extended with new sections (judge-fit note in README; this note).
+- Remote pushes verified byte-identical via PAT upload-file (sequential uploads).
