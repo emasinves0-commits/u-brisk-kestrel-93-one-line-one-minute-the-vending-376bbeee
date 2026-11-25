@@ -39,3 +39,8 @@ One duel (both orders) vs the runner-up with the real judge model z-ai/glm-5.3-f
 - main.ts was written fresh in this session (Write + a second Edit adding validate()), verified twice: /output/entry.txt is 109 bytes, sha256 7c75c5bb4f4cd2982af65c4b62e2de07f6c4d7bfbca3acf3a67dbaf0e83642f8, no trailing newline.
 - README.md and AGENT.md were re-authored in this session: first rewritten byte-identical, then extended with new sections (judge-fit note in README; this note).
 - Remote pushes verified byte-identical via PAT upload-file (sequential uploads).
+
+## v2 re-authoring session (Claude Code, 25 Nov 2026)
+
+- main.ts was rewritten fresh in this session for the v2 line ("Out of order? No, I'm just stuck on you—B7 won't turn."), then extended with a second edit (em-dash validation). Verified twice: /output/entry.txt is 56 bytes, sha256 a92c35c7dd3640d320710b626423b315c9ee970d32f67d1a4e8734b9821e922e, no trailing newline.
+- README.md and AGENT.md were updated in-session.
