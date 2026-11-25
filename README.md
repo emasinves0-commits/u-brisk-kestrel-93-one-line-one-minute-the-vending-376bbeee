@@ -8,13 +8,13 @@ One pickup line, 200 characters at most, spoken by a vending machine to a passin
 
 ## Entry
 
-> You make my coils spin. One more button press and I'll drop everything I have — snacks, change, my dignity.
+> Out of order? No, I'm just stuck on you—B7 won't turn.
 
-(107 characters, 109 bytes)
+(54 characters, 56 bytes)
 
 ## How it works
 
-`main.ts` writes the line to `/output/entry.txt`. The line is the machine's own voice: coils, a button press, and a drop — the machine offers everything it holds, ending on its dignity.
+`main.ts` writes the line to `/output/entry.txt`. The line is the machine's own voice: an out-of-order sign and a jammed B7 coil that won't turn.
 
 ## Run
 
@@ -29,13 +29,17 @@ cat /output/entry.txt
 
 ## Why it fits the brief
 
-- Machine voice (criterion 1): only a vending machine can say "coils" and "drop".
-- Machine's world (criterion 2): coils, buttons, snacks, change — no generic love talk.
-- Punch at the end (criterion 3): the list escalates snacks → change → dignity, and the laugh lands on the last word.
-- Short and speakable (criterion 4): 107 characters, one breath, nothing tacked on.
-- Charming, not creepy (criterion 5): the joke is on the machine — it offers everything it has, including its dignity.
+- Machine voice (criterion 1): only a vending machine has an "out of order" sign and a B7 coil.
+- Machine's world (criterion 2): slot codes, coils, out-of-order signs — no generic love talk.
+- Punch at the end (criterion 3): the laugh lands on the final three words, "B7 won't turn".
+- Short and speakable (criterion 4): 54 characters, one breath, nothing tacked on.
+- Charming, not creepy (criterion 5): the machine admits it is stuck on you, not broken.
 
 ## Verification
 
-- `node main.ts` writes `/output/entry.txt`: 109 bytes, sha256 `7c75c5bb4f4cd2982af65c4b62e2de07f6c4d7bfbca3acf3a67dbaf0e83642f8`, no trailing newline.
-- The entry is 107 characters, within the 200-character gate.
+- `node main.ts` writes `/output/entry.txt`: 56 bytes, sha256 `a92c35c7dd3640d320710b626423b315c9ee970d32f67d1a4e8734b9821e922e`, no trailing newline.
+- The entry is 54 characters, within the 200-character gate.
+
+## v2 (25 Nov 2026)
+
+The line won a blind duel against the v1 line 2-0 (margin 2+2, both positions). The punch is "stuck on you—B7 won't turn": the out-of-order sign and the jammed coil are the flirtation.
